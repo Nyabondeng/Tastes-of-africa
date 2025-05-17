@@ -1,6 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>East African Cuisine | Tastes of Africa</title>
+</head>
+<body>
+  <header>
+    <h1>East African Cuisine</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        East African cuisine reflects the diversity of cultures in the region, including <mark>Swahili, Ethiopian, and Somali</mark> influences. 
+        Meals often feature ingredients such as maize, beans, cassava, and coconut. Popular cooking methods include boiling, steaming, 
+        and stewing with aromatic spices.
+      </p>
+    </section>
+
+    <section>
+      <h2>Signature Dishes</h2>
+      <ul>
+        <li><a href="../recipes/injera.html">Injera (Ethiopia)</a></li>
+        <li><a href="../recipes/isombe.html">Isombe (Rwanda)</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common Ingredients</h2>
+      <p>
+        East African food typically includes <mark>cassava leaves</mark>, <mark>plantains</mark>, <mark>spices like cardamom and turmeric</mark>, 
+        and proteins such as goat meat and fish. Coconut milk is also widely used in coastal dishes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cooking Techniques</h2>
+      <p>
+        Many East African recipes use techniques like <mark>slow simmering</mark>, charcoal grilling, and <mark>fermentation</mark>—especially in 
+        dishes like Injera and fermented milk beverages.
+      </p>
+    </section>
+
+    <section>
+      <h2>Explore More</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tCQHHZP_HqY" title="East African Food Documentary" frameborder="0" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">← Back to Home</a></p>
+  </footer>
+</body>
+</html>
+
+
+ChatGPT said:
+Thanks, Nyabon! The east-africa.html file itself looks great. Since it's working on Live Server but not when clicked from the homepage, the issue is almost certainly in the link on your homepage (index.html) that leads to this file.
+
+✅ What You Need to Check
+Please open your index.html file and look for the part that links to the East African cuisine page. It may look like this:
+
+html
+Copy
+Edit
+<a href="east-africa.html">East African Cuisine</a>
+But based on your file structure, the correct path should probably be:
+
+html
+Copy
+Edit
+<a href="regions/east-africa.html">East African Cuisine</a>
+This assumes your folder structure is like this:
+
+pgsql
+Copy
+Edit
+tastes-of-africa/
+├── index.html
+├── regions/
+│   └── east-africa.html
+🔧 To Fix It:
+Open your index.html.
+
+Find the anchor (<a>) tag linking to East African Cuisine.
+
+Update the href to:
+
+html
+Copy
+Edit
+<a href="regions/east-africa.html">East African Cuisine</a>
+Save the file.
+
+Open index.html in Live Server or your browser again and click the link — it should now properly open east-africa.html.
+
+Let me know if you’re unsure where the link is in your index.html, and I can guide you step by step!
+
+
+
+
+
+
+You said:
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the diverse and rich world of African cuisine. Learn about recipes, food culture, and regional specialties.">
