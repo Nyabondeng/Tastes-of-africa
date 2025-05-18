@@ -108,6 +108,18 @@ nav a:hover {
   font-size: 1rem; /* smaller heading */
 }
 
+/* Increase card size only in recipes section */
+.recipes-section .card {
+  width: 300px; /* or larger */
+  padding: 2rem;
+  font-size: 1rem; /* slightly bigger text */
+}
+
+.recipes-section .card img {
+  height: 200px; /* increase image height */
+}
+
+
 /* Card Container for Horizontal Layout */
 .card-container {
   display: flex;
